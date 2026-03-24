@@ -9,35 +9,39 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
+  <body class="pt-5">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container d-flex justify-content-between">
         <span class="navbar-brand fw-bold fs-3 text-primary">
           Nu<span class="text-warning">ha</span>min
         </span>
         <div>
-          <span class="text-white me-3">Home</span>
-          <span class="text-white me-3">About</span>
-          <span class="text-white me-3">Service</span>
-          <span class="text-white">Contact</span>
+          <a class="text-white me-3 text-decoration-none" href="#">Home</a>
+          <a class="text-white me-3 text-decoration-none" href="#">About</a>
+          <a class="text-white me-3 text-decoration-none" href="#">Service</a>
+          <a class="text-white me-3 text-decoration-none" href="#contact"
+            >Contact</a
+          >
         </div>
       </div>
     </nav>
     <header
-      class="container bg-primary mt-5 mb-3 p-5 d-flex align-items-center"
+      class="container-fluid px-3 bg-primary text-white mt-5 mb-3 p-5 d-flex align-items-center"
     >
-      <p class="fw-bold fs-1 text-center">Welcome to My Website</p>
-      <p class="fw-bold lead">
-        I am learning web development and building modern websites using
-        Bootstrap.
-      </p>
-      <p class="fw-bold lead">
-        This is my first responsive website project using Bootstrap. I am
-        passionate about technology and design.
-      </p>
-      <button class="btn btn-success">Get Started</button>
+      <div class="text-center w-100">
+        <p class="fw-bold fs-1 text-center mb-3">Welcome to My Website</p>
+        <p class="fw-bold lead mb-3">
+          I am learning web development and building modern websites using
+          Bootstrap.
+        </p>
+        <p class="fw-bold lead mb-3">
+          This is my first responsive website project using Bootstrap. I am
+          passionate about technology and design.
+        </p>
+        <button class="btn btn-success">Get Started</button>
+      </div>
     </header>
-    <div class="container mt-5">
+    <div class="container">
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 text-center">
@@ -77,20 +81,31 @@
         </div>
       </div>
     </div>
-    <form>
-      <p class="fw-bold fs-1 text-center">Contact me</p>
-      <p class="fw-bold lead m-3">
+    <div class="container mt-5 mb-5" id="contact">
+      <p class="fw-bold fs-1 text-center">Contact Me</p>
+      <p class="fw-bold lead text-center mb-4">
         Feel free to reach out if you have any questions or want to work
         together.
       </p>
-      <input type="text" class="form-control m-3" placeholder="Enter name" />
-      <input type="email" class="form-control m-3" placeholder="Enter email" />
-      <textarea
-        type="text"
-        class="form-control m-3"
-        placeholder="Enter message"
-      ></textarea>
-      <button class="btn btn-success m-3">Send message</button>
-    </form>
+
+      <form class="mx-auto" style="max-width: 600px">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Enter name" />
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Enter email" />
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control"
+            rows="5"
+            placeholder="Enter message"
+          ></textarea>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-success btn-lg">Send Message</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
